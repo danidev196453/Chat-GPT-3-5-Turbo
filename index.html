@@ -1,0 +1,72 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" href="https://diviengine.com/wp-content/uploads/2023/01/ChatGPT-Logooptimized-610x610.png" />
+		<title>Chat GPT - Dani Coding</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" />
+		<link rel="stylesheet" href="assets/css/styles.css" />
+	</head>
+	<body class="theme">
+		<nav class="navbar navbar-expand-lg navbar-light sticky-top top-0 shadow py-0 bg-skyblue dark-theme">
+			<div class="navbar-brand logo dark-text">
+			 	<h3>GPT-3.5-Turbo</h3>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<i class="navbar-toggler-icon"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto mt-2 mt-lg-0 mb-1 ">
+					<li class="nav-item">
+						<div class="d-flex align-items-center">
+							<input type="text" id="apiKey" value="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" class="form-control mr-1 input-dark" size="55" placeholder="Paste your openAI API key here...">
+							<label class="switch mb-0 pl-5">
+								<input type="checkbox" id="darkModeToggle" >
+								<span class="slider round"></span>
+							</label><br><br>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="container-fluid">
+			<div class="row ">
+				<div class="col-md-12 mb-3">
+					<div class="card mt-3">
+						<div class="card-header row">
+							<div class="col-6">
+								<h3>Chat GPT</h3>						
+							</div>
+							<div class="col-6 offset-md-3 col-md-3 text-right">	
+								<a  type="button" onclick="window.print()" class="btn btn-outline-info">Print</a>						
+								<a  type="button" class="btn btn-outline-success" onclick="clearContent()">Clear</a>
+							</div>
+						</div>
+						<div class="card-body chat-box rounded p1" id="chatbox">
+							<span id="copy-popup" class="popup">Copied!</span>
+						</div>
+						<div class="card-footer">
+							<div class="form-group row">
+								<div class="col-md-10 mb-1">
+									<textarea id="userInput" rows="1" class="form-control input-dark" placeholder="Type your message here..."></textarea>
+								</div>
+								<div class="col-md-2">
+									<input id="sendButton" type="button" value="Send" class="form-control btn btn-primary btn-block" />
+								</div>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<p class="text-footer">Copyright &copy; 2023 <a href="https://danicoding.my.id">Dani Coding</a>, All rights reserved.</p>
+		</footer>
+		<script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/markdown-it/13.0.1/markdown-it.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+		<script src="assets/js/script.js"></script>
+	</body>
+</html>
